@@ -1,4 +1,4 @@
-package hello.servlet.web.servlet;
+package hello.servlet.web.servletmvc;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import hello.servlet.domain.member.Member;
 import hello.servlet.domain.member.MemberRepository;
 
-@WebServlet(name = "memberListServlet", urlPatterns = "/servlet/members")
-public class MemberListServlet extends HttpServlet{
+@WebServlet(name = "mvcmemberListServlet", urlPatterns = "/servlet/members")
+public class MvcMemberListServlet extends HttpServlet{
 	
 	private MemberRepository memberRepository = MemberRepository.getInstance();
 	
